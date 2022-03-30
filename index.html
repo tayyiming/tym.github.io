@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <title>Singapore Botanic Gardens</title> 
+  <link rel="shortcut icon" type="image/png" href="media/icon.png">
+         <link rel="stylesheet" href="botanicgarden.css">
+   </head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+</head>
+<body style="background-color:#f1eee7;">
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function myFunction1() {
+  document.getElementById("demo1").style.color = "#e789fa";
+}
+function myFunction2() {
+  document.getElementById("demo2").style.color = "#e789fa";
+}
+function myFunction3() {
+  document.getElementById("demo3").style.color = "#e789fa";
+}
+function myFunction4() {
+  document.getElementById("demo4").style.color = "#e789fa";
+}
+function myFunction5() {
+  document.getElementById("demo5").style.color = "#e789fa";
+}
+function myFunction6() {
+  document.getElementById("demo6").style.color = "#e789fa";
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="logo_button">  <img src="media/logo.jpg" class="logo" alt="Singapore Botanic Gardens logo"></a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">Gardens</a>
+      <a href="#menu" class="w3-bar-item w3-button">Activities to do</a>
+      <a href="#tours" class="w3-bar-item w3-button">Tours</a>
+      <a href="#contact" class="w3-bar-item w3-button">Map</a>
+    </div>
+  </div>
+</div>
+<!-- Header -->
+     <a> <img class="background" src="media/header.png" alt="A picture from Botanic Gardens" id="home"></a>
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+
+
+<div class="slideshow-container">
+<body onload="currentSlide(1)">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <a href="https://www.nparks.gov.sg/sbg/our-gardens/nassim-entrance/healing-garden" target="_blank"><img src="media/healinggarden.png" alt="The Healing Garden" style="width:100%"></a>
+  <div class="text">The Healing Garden</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <a href="https://www.nparks.gov.sg/sbg/our-gardens/tanglin-entrance/bonsai-garden" target="_blank"><img src="media/bonsaigarden.jpg" alt="The Bonsai Garden" style="width:100%"></a>
+  <div class="text">The Bonsai Garden</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <a href="https://www.nparks.gov.sg/sbg/our-gardens/tyersall-entrance/sph-walk-of-giants" target="_blank"><img src="media/sphwalkofgiants.jpg" alt="The SPH Walk of Giants" style="width:100%"></a>
+  <div class="text">The SPH Walk of Giants</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<p className="mySlides"></p>
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Gardens</h1><br>
+      <p class="w3-large details-content rte"> Ever wanted some <span class="w3-tag w3-light-grey" title="peace">peas</span> and quiet? The Botanic Gardens might just be the place for you. The Gardens is developed along a Four-Core Concept. The four cores are <a href="https://www.nparks.gov.sg/sbg/our-gardens/tanglin-entrance" target="_blank">Tanglin</a>, which is the heritage core retaining the old favourites and charms of the historic Gardens; <a href="https://www.nparks.gov.sg/sbg/our-gardens/nassim-entrance target="_blank"">Central</a> is the tourist belt of the Gardens; <a href="https://www.nparks.gov.sg/sbg/our-gardens/bukit-timah-core" target="_blank">Bukit Timah</a> the educational and discovery zone; and <a href="https://www.nparks.gov.sg/sbg/our-gardens/tyersall-entrance" target="_blank">Tyersall-Gallop</a>, the Learning Forest. From the <a href="https://www.nparks.gov.sg/sbg/our-gardens/nassim-entrance/healing-garden" target="_blank"> Healing Garden</a>, where you can find the Butterfly Pea Plant or the <a href="https://www.nparks.gov.sg/sbg/our-gardens/tanglin-entrance/bonsai-garden" target="_blank"> Bonsai Garden</a>, where plants are carefully groomed to grow into  aesthetically appealing shapes.The wide range of themes ensure everyone has something to look forward to at the Botanics Garden.</p>
+      </div>
+  </div>
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+  <hr>
+  
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Acitivites to do</h1><br>
+ <p class="w3-large details-content rte"> The Singapore Botanic Gardens is arguably the best place to have a picnic in Singapore. Fill your lungs with fresh air while enjoying a slice of sandwich and a bottle of chilled fruit juice could be enough to recharge you for the week ahead. This could also be an opportunity to catch up with your friends and family while enjoying the scenic beauty of the garden. If you prefer somewhere indoors, perhaps a trip down to <a href="https://www.nparks.gov.sg/sbg/our-gardens/tanglin-entrance/heritage-museum-cdl-gallery" target="_blank">Heritage Museum</a> or the <a href="https://www.nparks.gov.sg/sbg/our-gardens/gallop-entrance/botanical-art-gallery" target="_blank">Botanical Art Gallery</a> would interest you. </p>
+     
+    </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="media/picnic.jpg" class="w3-round w3-image" alt="Picnic photo" style="width:100%">
+    </div>
+  </div>
+
+  <hr>
+  <div style="text-align:center" class="w3-container w3-padding-64" id="tours">
+      <h1>Tours</h1><br>
+      <table>
+  <tr>
+    <th>Type of activity</th>
+    <th>Description</th>
+    <th>Price</th>
+    <th>Time/Duration</th>
+    <th>Important details</th>
+  </tr>
+  <tr>
+    <td><a style="color:#282bd4;" id="demo1" onclick="myFunction1()" href="https://www.nparks.gov.sg/sbg/visit-us/guided-tours" target="_blank">Tours</a></td>
+    <td>volunteers conduct different tours every saturday</td>
+    <td>FREE</td>
+    <td>Saturdays onlys</td>
+    <td>Tours are cycled monthly and are held every saturday except the 5th saturday of the month</td>
+  </tr>
+  <tr>
+    <td><a style="color:#282bd4;" id="demo2" onclick="myFunction2()" href="https://www.nparks.gov.sg/sbg/whats-happening/calendar-of-events/painting-the-vibrancy-of-singapore's-nature----paintings-by-ng-guat-tin" target="_blank">Exhibitions</a></td>
+    <td>This collection of paintings has been illustrated specially by Guat Tin to present the visual beauty of Singapore’s nature, as seen in various parks and gardens of Singapore</td>
+    <td>FREE</td>
+    <td>8 Jan 2022 - 9 Jun 2022</td>
+    <td>Be aware of the opening hours of the Botanic Garden*</td>
+  </tr>
+    <tr>
+    <td><a style="color:#282bd4;" id="demo3" onclick="myFunction3()" href="https://www.nparks.gov.sg/sbg/whats-happening/calendar-of-events" target="_blank">Events</a></td>
+    <td>This collection of paintings has been illustrated specially by Guat Tin to present the visual beauty of Singapore’s nature, as seen in various parks and gardens of Singapore</td>
+    <td>free & paid services</td>
+    <td>varied</td>
+    <td>visit the link to find out more about the events available</td>
+  </tr>
+</table>
+<p>*opening hours of the Singapore Botanic Gardens is from 5am to 12am
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>Map</h1><br>
+      <img src="media/map.jpg" usemap="#workmap" class="w3-round w3-image" alt="Map of Botanic Gardens" style="width:100%">
+      
+<map name="workmap">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+</map>
+
+
+     <p> <a style="color:#282bd4;" id="demo4" onclick="myFunction4()" href="https://goo.gl/maps/d5qjZusYQK9Eydeh8" target="_blank">Click link to get direction to Botanic Gardens</a></p>
+      <a style="color:#282bd4;" id="demo5" onclick="myFunction5()" href="https://www.nparks.gov.sg/-/media/sbg/documents/map-sbg-11-feb-2022.ashx?la=en&hash=9B032AD8802433459AB12CB8DEEA5260BE2DA23A8" target="_blank">Click link to download the map</a>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+</body>
+</html>
